@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Out of Stock</title>
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="./images/logo.png">
+   <!-- Fontawesome Icons  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Custom Css  -->
+   <link rel="stylesheet" href="./css/style.css">
+   <!-- bootstrap Css  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <!------ Admin header ----- -->
+   <div class="container-fluid d-flex justify-content-between  align-items-center py-2 admin-nav">
+      <div class="admin-logo d-flex align-items-center flex-column">
+         <i class="fa-solid fa-cart-shopping fw-bold fs-4"></i>
+         <h3 class="fs-3 fw-bold">e<span>-C</span>om</h3>
+      </div>
+      <div class="admin-name py-1 rounded text-white dropdown">
+         <button type="button" class="btn text-white dropdown-toggle " data-bs-toggle="dropdown">
+            Hi Sefat
+         </button>
+         <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+         </ul>
+      </div>
+   </div>
+    <!-- Admin header ends -->
+
+    <!-- Out of Stock Body  -->
+   <div class="container-fluid">
+      <div class="row ps-0" style="padding-left: 0 !important">
+         <!------ Side Bar  ------->
+         <div class="col-2" style="height:90vh !important" id="sidebar-container">
+            <ul class="ps-0">
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./index.html">Dashboard</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./products.html">Products</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./categories.html">Categories</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./sub-categories.html">Subcategories</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./brands.html">Bands</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./orders.html">Orders</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./out-of-stock.html">Out of Stock</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./users.html">Users</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./settings.html">Settings</a>
+               </li>
+            </ul>
+         </div>
+         <!-- Side Bar ends -->
+
+         <!------- Out of Stock Content  ------>
+         <div class="col-8 mx-auto mt-3 product-content-container">
+             <!-- Out of Stock body heading title -->
+             <h1 class="fs-2 mb-3">Out of Stock</h1>
+
+             <table class="table table-sm table-bordered table-hover table-striped">
+               <thead>
+                  <tr>
+                     <th>Product ID</th>
+                     <th>Title</th>
+                     <th>Image</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>000045</td>
+                     <td>Polka Print Bhagalpuri Cotton Blend Saree (Blue)</td>
+                     <td class="product_img">
+                        <img src="./images/logo.png" alt="Img">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>000045</td>
+                     <td>Polka Print Bhagalpuri Cotton Blend Saree (Blue)</td>
+                     <td class="product_img">
+                        <img src="./images/logo.png" alt="Img">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>000045</td>
+                     <td>Polka Print Bhagalpuri Cotton Blend Saree (Blue)</td>
+                     <td class="product_img">
+                        <img src="./images/logo.png" alt="Img">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>000045</td>
+                     <td>Polka Print Bhagalpuri Cotton Blend Saree (Blue)</td>
+                     <td class="product_img">
+                        <img src="./images/logo.png" alt="Img">
+                     </td>
+                  </tr>
+                </tbody>
+             </table>
+         </div>
+         <!------- Out of Stock Content end ------>
+      </div>
+   </div>
+ <!-- Out of Stock Body  -->
+
+
+   <!-- bootstrap Js  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Custom Javascript  -->
+   <script type="text/javascript" src="./js/admin-script.js"></script>
+</body>
+</html>

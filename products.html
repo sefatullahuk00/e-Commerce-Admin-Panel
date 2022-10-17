@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Products</title>
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="./images/logo.png">
+   <!-- Fontawesome Icons  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Custom Css  -->
+   <link rel="stylesheet" href="./css/style.css">
+   <!-- bootstrap Css  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <!------ Admin header ----- -->
+   <div class="container-fluid d-flex justify-content-between  align-items-center py-2 admin-nav">
+      <div class="admin-logo d-flex align-items-center flex-column">
+         <i class="fa-solid fa-cart-shopping fw-bold fs-4"></i>
+         <h3 class="fs-3 fw-bold">e<span>-C</span>om</h3>
+      </div>
+      <div class="admin-name py-1 rounded text-white dropdown">
+         <button type="button" class="btn text-white dropdown-toggle " data-bs-toggle="dropdown">
+            Hi Sefat
+         </button>
+         <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+         </ul>
+      </div>
+   </div>
+    <!-- Admin header ends -->
+
+    <!-- Products Body  -->
+   <div class="container-fluid">
+      <div class="row ps-0" style="padding-left: 0 !important">
+         <!------ Side Bar  ------->
+         <div class="col-2" style="height:90vh !important" id="sidebar-container">
+            <ul class="ps-0">
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./index.html">Dashboard</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./products.html">Products</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./categories.html">Categories</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./sub-categories.html">Subcategories</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./brands.html">Bands</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./orders.html">Orders</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./out-of-stock.html">Out of Stock</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./users.html">Users</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./settings.html">Settings</a>
+               </li>
+            </ul>
+         </div>
+         <!-- Side Bar ends -->
+
+         <!------- Products Content  ------>
+         <div class="col-10 px-4 mt-3 product-content-container">
+            <!-- Products body heading -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+               <h1 class="fs-2">Products</h1>
+               <a href="#" class="btn btn-sm fs-6 px-3 fw-bold rounded-pill text-white common-btn" data-bs-toggle="modal" data-bs-target="#addnew-product-modal">Add New</a>
+            </div>
+            
+            <!-- Products Table  -->
+            <table class="table table-bordered table-striped table-hover">
+               <thead>
+                 <tr>
+                   <th>ID</th>
+                   <th>Title</th>
+                   <th>Category</th>
+                   <th>Brand</th>
+                   <th>Price</th>
+                   <th>Quantity</th>
+                   <th>Image</th>
+                   <th>Status</th>
+                   <th>Action</th>
+                 </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>PDR0012</td>
+                     <td>Polka Print Bhagalpuri Cotton Blend Saree (Blue)</td>
+                     <td>Sarees</td>
+                     <td></td>
+                     <td>BDT.299</td>
+                     <td>12</td>
+                     <td class="product_img">
+                        <img class="" src="./images/about-img.png" alt="Img">
+                     </td>
+                     <td>
+                        <span class="btn btn-sm btn-success py-1">Active</span>
+                        <!-- <span class="btn btn-sm btn-success disabled">Inactive</span> -->
+                     </td>
+                     <td class="d-flex justify-content-around"> 
+                        <a href="#" data-eid="" data-bs-toggle="modal" data-bs-target="#update-product-modal">
+                           <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                     </td>
+                  </tr>
+                   
+                  <tr>
+                     <td>PDR0012</td>
+                     <td>Polka Print Bhagalpuri Cotton Blend Saree (Blue)</td>
+                     <td>Sarees</td>
+                     <td></td>
+                     <td>BDT.299</td>
+                     <td>12</td>
+                     <td class="product_img">
+                        <img class="" src="./images/about-img.png" alt="Img">
+                     </td>
+                     <td>
+                        <span class="btn btn-sm btn-success py-1">Active</span>
+                        <!-- <span class="btn btn-sm btn-success disabled">Inactive</span> -->
+                     </td>
+                     <td class="d-flex justify-content-around"> 
+                        <a href="#" data-eid="" data-bs-toggle="modal" data-bs-target="#update-product-modal">
+                           <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <td>PDR0012</td>
+                     <td>Polka Print Bhagalpuri Cotton Blend Saree (Blue)</td>
+                     <td>Sarees</td>
+                     <td></td>
+                     <td>BDT.299</td>
+                     <td>12</td>
+                     <td class="product_img">
+                        <img class="img-fluid" src="./images/ring-img.jpg" alt="Img">
+                     </td>
+                     <td>
+                        <span class="btn btn-sm btn-success py-1">Active</span>
+                        <!-- <span class="btn btn-sm btn-success disabled">Inactive</span> -->
+                     </td>
+                     <td class="d-flex justify-content-around"> 
+                        <a href="#" data-eid="" data-bs-toggle="modal" data-bs-target="#update-product-modal">
+                           <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <td>PDR0012</td>
+                     <td>Polka Print Bhagalpuri Cotton Blend Saree (Blue)</td>
+                     <td>Sarees</td>
+                     <td></td>
+                     <td>BDT.299</td>
+                     <td>12</td>
+                     <td class="product_img">
+                        <img class="" src="./images/about-img.png" alt="Img">
+                     </td>
+                     <td>
+                        <span class="btn btn-sm btn-success py-1">Active</span>
+                        <!-- <span class="btn btn-sm btn-success disabled">Inactive</span> -->
+                     </td>
+                     <td class="d-flex justify-content-around"> 
+                        <a href="#" data-eid="" data-bs-toggle="modal" data-bs-target="#update-product-modal">
+                           <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                     </td>
+                  </tr>
+               </tbody>
+             </table>
+
+         <!-- Pagination  -->
+         <div class="mt-5">
+            <ul class="pagination justify-content-center">
+               <li class="page-item disabled">
+                  <a class="page-link text-white fw-bold" href="#">Previous</a>
+               </li>
+               <li class="page-item">
+                  <a class="page-link text-white fw-bold active-pagination" href="#">1</a>
+               </li>
+               <li class="page-item">
+                  <a class="page-link text-white fw-bold" href="#">2</a>
+               </li>
+               <li class="page-item">
+                  <a class="page-link text-white fw-bold" href="#">3</a>
+               </li>
+               <li class="page-item">
+                  <a class="page-link text-white fw-bold" href="#">Next</a>
+               </li>
+             </ul>
+         </div>
+         <!-- Pagination ends -->
+         </div>
+         <!-- Products Content ends -->
+      </div>
+   </div>
+   <!-- Products Body ends -->
+
+   <!------ addnew-product-modal ------>
+   <div class="modal modal-xl fade" id="addnew-product-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Add New Product</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+             <!-- form -->
+            <form action="">
+               <!-- row -->
+               <div class="row">
+                  <!-- col left  -->
+                  <div class="col-9">
+                     <!-- Product Title -->
+                     <div class="mb-3 mt-3">
+                        <label for="product-title" class="form-label fw-bold">Product Title</label>
+                        <input autocomplete="off" type="text" class="form-control" id="product-title" placeholder="Product Title" name="product_title">
+                     </div>
+                     <!-- Product Category, SubCategory & Brand -->
+                     <div class="mb-3 row">
+                        <!--  Product Category -->
+                        <div class="col-4 d-flex flex-column">
+                           <label for="product-category" class="form-label fw-bold">Product Category</label>
+                           <select name="product_category" id="product-category" class="form-select">
+                              <option disabled>Product Category</option>
+                              <option>Product Category</option>
+                              <option>Product Category</option>
+                            </select>
+                        </div>
+                        <!--  Product Sub-Category -->
+                        <div class="col-4 d-flex flex-column">
+                           <label for="product-category" class="form-label fw-bold">Product Sub-Category</label>
+                           <select name="product_subcategory" id="product-subcategory" class="form-select">
+                              <option disabled>Product Sub-Category</option>
+                              <option>Product Sub-Category</option>
+                              <option>Product Sub-Category</option>
+                           </select>
+                        </div>
+                        <!--  Product Brand -->
+                        <div class="col-4 d-flex flex-column">
+                           <label for="product-category" class="form-label fw-bold">Product Brand</label>
+                           <select  name="product_brand" id="product-brand" class="form-select">
+                              <option disabled>Product Brand</option>
+                              <option>Product Brand</option>
+                              <option>Product Brand</option>
+                            </select>
+                        </div>
+                        <!--  Product Description -->
+                        <div class="col-12 mt-3 d-flex flex-column">
+                           <label for="product-category" class="form-label fw-bold">Product Description</label>
+                           <textarea class="p-3" name="product-description" id="" cols="30" rows="10"></textarea>
+                        </div>
+                     </div>
+   
+                  </div>
+                  <!-- col right  -->
+                  <div class="col-3">
+                     <!-- Featured Image -->
+                     <div class="mb-3 mt-3 d-flex flex-column">
+                        <label for="product-title" class="form-label fw-bold">Featured Image</label>
+                        <input type="file" class="form-control" id="featured-image" name="featured_image">
+                     </div>
+                     <!-- Product Price  -->
+                     <div class="mb-3 d-flex flex-column">
+                        <label for="product-title" class="form-label fw-bold">Product Price</label>
+                        <input type="number" class="form-control" id="product-brand" name="product_brand">
+                     </div>
+                       <!-- Available Quantity -->
+                     <div class="mb-3 d-flex flex-column">
+                        <label for="vailable-quantity" class="form-label fw-bold">Available Quantity</label>
+                        <input type="number" class="form-control" id="available-quantity" name="available_quantity">
+                     </div>
+                      <!-- Status active/inac -->
+                      <div class="mb-3 d-flex flex-column">
+                        <label for="product-status" class="form-label fw-bold">Status</label>
+                        <select class="form-select" name="product_status" id="product-status">
+                           <option value="1">Publish</option>
+                           <option value="0">Draft</option>
+                        </select>
+                     </div>
+                     <!-- submit btn  -->
+                     <input class="btn btn-sm rounded px-5 mt-3 fs-6 fw-bold text-white common-btn" type="submit" name="add-product-submitbtn" value="Add" id="add-product-submitbtn">
+                  </div>
+               </div>
+               <!-- form ends  -->
+            </form>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- addnew-product-modal ends-->
+
+ <!-- Update-product-modal-->
+ <div class="modal modal-xl fade" id="update-product-modal">
+   <div class="modal-dialog">
+     <div class="modal-content">
+ 
+       <!-- Modal Header -->
+       <div class="modal-header">
+         <h4 class="modal-title">Edit Product</h4>
+         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+       </div>
+ 
+       <!-- Modal body -->
+       <div class="modal-body">
+          <!-- form -->
+         <form action="">
+            <!-- row -->
+            <div class="row">
+               <!-- col left  -->
+               <div class="col-9">
+                  <!-- Product Title -->
+                  <div class="mb-3 mt-3">
+                     <label for="product-title" class="form-label fw-bold">Product Title</label>
+                     <input autocomplete="off" type="text" class="form-control" id="product-title" placeholder="Product Title" name="product_title">
+                  </div>
+                  <!-- Product Category, SubCategory & Brand -->
+                  <div class="mb-3 row">
+                     <!--  Product Category -->
+                     <div class="col-4 d-flex flex-column">
+                        <label for="product-category" class="form-label fw-bold">Product Category</label>
+                        <select name="product_category" id="product-category" class="form-select">
+                           <option disabled>Product Category</option>
+                           <option>Product Category</option>
+                           <option>Product Category</option>
+                         </select>
+                     </div>
+                     <!--  Product Sub-Category -->
+                     <div class="col-4 d-flex flex-column">
+                        <label for="product-category" class="form-label fw-bold">Product Sub-Category</label>
+                        <select name="product_subcategory" id="product-subcategory" class="form-select">
+                           <option disabled>Product Sub-Category</option>
+                           <option>Product Sub-Category</option>
+                           <option>Product Sub-Category</option>
+                        </select>
+                     </div>
+                     <!--  Product Brand -->
+                     <div class="col-4 d-flex flex-column">
+                        <label for="product-category" class="form-label fw-bold">Product Brand</label>
+                        <select  name="product_brand" id="product-brand" class="form-select">
+                           <option disabled>Product Brand</option>
+                           <option>Product Brand</option>
+                           <option>Product Brand</option>
+                         </select>
+                     </div>
+                     <!--  Product Description -->
+                     <div class="col-12 mt-3 d-flex flex-column">
+                        <label for="product-category" class="form-label fw-bold">Product Description</label>
+                        <textarea class="p-3" name="product-description" id="" cols="30" rows="10"></textarea>
+                     </div>
+                  </div>
+
+               </div>
+               <!-- col right  -->
+               <div class="col-3">
+                  <!-- Featured Image -->
+                  <div class="mb-3 mt-3 d-flex flex-column">
+                     <label for="product-title" class="form-label fw-bold">Featured Image</label>
+                     <input type="file" class="form-control" id="featured-image" name="featured_image">
+                  </div>
+                  <!-- Product Price  -->
+                  <div class="mb-3 d-flex flex-column">
+                     <label for="product-title" class="form-label fw-bold">Product Price</label>
+                     <input type="number" class="form-control" id="product-brand" name="product_brand">
+                  </div>
+                    <!-- Available Quantity -->
+                  <div class="mb-3 d-flex flex-column">
+                     <label for="vailable-quantity" class="form-label fw-bold">Available Quantity</label>
+                     <input type="number" class="form-control" id="available-quantity" name="available_quantity">
+                  </div>
+                   <!-- Status active/inac -->
+                   <div class="mb-3 d-flex flex-column">
+                     <label for="product-status" class="form-label fw-bold">Status</label>
+                     <select class="form-select" name="product_status" id="product-status">
+                        <option value="1">Publish</option>
+                        <option value="0">Draft</option>
+                     </select>
+                  </div>
+                  <!-- submit btn  -->
+                  <input class="btn btn-sm rounded px-5 mt-3 fs-6 fw-bold text-white common-btn" type="submit" name="update-product-submitbtn" value="Update" id="update-product-submitbtn">
+               </div>
+            </div>
+            <!-- form ends  -->
+         </form>
+       </div>
+ 
+       <!-- Modal footer -->
+       <!-- <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+       </div> -->
+ 
+     </div>
+   </div>
+ </div>
+ <!-- Update-product-modal ends-->
+
+
+
+
+   <!-- bootstrap Js  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Custom Javascript  -->
+   <script type="text/javascript" src="./js/admin-script.js"></script>
+</body>
+</html>

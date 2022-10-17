@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dashboard</title>
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="./images/logo.png">
+   <!-- Fontawesome Icons  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Custom Css  -->
+   <link rel="stylesheet" href="./css/style.css">
+   <!-- bootstrap Css  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+   <!-- Admin header  -->
+   <div class="container-fluid d-flex justify-content-between  align-items-center py-2 admin-nav">
+      <div class="admin-logo d-flex align-items-center flex-column">
+         <i class="fa-solid fa-cart-shopping fw-bold fs-4"></i>
+         <h3 class="fs-3 fw-bold">e<span>-C</span>om</h3>
+      </div>
+      <div class="admin-name py-1 rounded text-white dropdown">
+         <button type="button" class="btn text-white dropdown-toggle " data-bs-toggle="dropdown">
+            Hi Sefat
+         </button>
+         <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+         </ul>
+      </div>
+   </div>
+    <!-- Admin header ends -->
+
+    <!-- Dashboard Body  -->
+   <div class="container-fluid">
+      <div class="row ps-0" style="padding-left: 0 !important">
+         <!------ Side Bar  ------>
+         <div class="col-2" style="height:90vh !important" id="sidebar-container">
+            <ul class="ps-0">
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./index.html">Dashboard</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./products.html">Products</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./categories.html">Categories</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./sub-categories.html">Subcategories</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./brands.html">Bands</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./orders.html">Orders</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./out-of-stock.html">Out of Stock</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./users.html">Users</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./settings.html">Settings</a>
+               </li>
+            </ul>
+         </div>
+         <!-- Side Bar ends -->
+
+         <!------- Dashboard Content ----- -->
+         <div class="col-10 px-4 mt-3">
+            <h1 class="fs-2 mb-2">Dashboard</h1>
+
+            <div class="row dashboard-content-container">
+               <div class="col-4 position-relative">
+                  <div class="dashboard-content-detail">
+                     <span class="nums-count fs-1">12</span>
+                     <span class="nums-count-title fs-5">Products</span>
+                  </div>
+               </div>
+               <div class="col-4 position-relative">
+                  <div class="dashboard-content-detail">
+                     <span class="nums-count fs-1">7</span>
+                     <span class="nums-count-title fs-5">Categories</span>
+                  </div>
+               </div>
+               <div class="col-4 position-relative">
+                  <div class="dashboard-content-detail">
+                     <span class="nums-count fs-1">19</span>
+                     <span class="nums-count-title fs-5">Sub Categories</span>
+                  </div>
+               </div>
+               <div class="col-4 position-relative">
+                  <div class="dashboard-content-detail">
+                     <span class="nums-count fs-1">4</span>
+                     <span class="nums-count-title fs-5">BRANDS</span>
+                  </div>
+               </div>
+               <div class="col-4 position-relative">
+                  <div class="dashboard-content-detail">
+                     <span class="nums-count fs-1">43</span>
+                     <span class="nums-count-title fs-5">ORDERS</span>
+                  </div>
+               </div>
+               <div class="col-4 position-relative">
+                  <div class="dashboard-content-detail">
+                     <span class="nums-count fs-1">14</span>
+                     <span class="nums-count-title fs-5">USERS</span>
+                  </div>
+               </div>
+            </div>
+            <!-- row  -->
+          
+         </div>
+         <!-- Dashboard Content ends  -->
+      </div>
+   </div>
+   
+
+   <!-- Footer  -->
+   <!-- bootstrap Js  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Custom Javascript  -->
+   <script type="text/javascript" src="./js/admin-script.js"></script>
+</body>
+</html>

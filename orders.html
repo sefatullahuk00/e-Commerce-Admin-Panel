@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Orders</title>
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="./images/logo.png">
+   <!-- Fontawesome Icons  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Custom Css  -->
+   <link rel="stylesheet" href="./css/style.css">
+   <!-- bootstrap Css  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <!------ Admin header ----- -->
+   <div class="container-fluid d-flex justify-content-between  align-items-center py-2 admin-nav">
+      <div class="admin-logo d-flex align-items-center flex-column">
+         <i class="fa-solid fa-cart-shopping fw-bold fs-4"></i>
+         <h3 class="fs-3 fw-bold">e<span>-C</span>om</h3>
+      </div>
+      <div class="admin-name py-1 rounded text-white dropdown">
+         <button type="button" class="btn text-white dropdown-toggle " data-bs-toggle="dropdown">
+            Hi Sefat
+         </button>
+         <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+         </ul>
+      </div>
+   </div>
+    <!-- Admin header ends -->
+
+    <!-- Orders Body  -->
+   <div class="container-fluid">
+      <div class="row ps-0" style="padding-left: 0 !important">
+         <!------ Side Bar  ------->
+         <div class="col-2" style="height:90vh !important" id="sidebar-container">
+            <ul class="ps-0">
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./index.html">Dashboard</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./products.html">Products</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./categories.html">Categories</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./sub-categories.html">Subcategories</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./brands.html">Bands</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./orders.html">Orders</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./out-of-stock.html">Out of Stock</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./users.html">Users</a>
+               </li>
+               <li class="list-unstyled px-3 py-1 mb-1">
+                  <a class="text-decoration-none text-white fs-6 fw-bold" href="./settings.html">Settings</a>
+               </li>
+            </ul>
+         </div>
+         <!-- Side Bar ends -->
+
+         <!------- Orders Content  ------>
+         <div class="col-10 px-4 mt-3 product-content-container">
+            <!-- Orders body heading title -->
+               <h1 class="fs-2 mb-3">All Orders</h1>
+            
+            <!-- Orders Table  -->
+            <table class="table table-bordered table-striped table-hover">
+               <thead>
+                 <tr>
+                   <th>ORDER No.</th>
+                   <th>Product Details</th>
+                   <th>QNTY</th>
+                   <th>Total Amount</th>
+                   <th>Customer Details</th>
+                   <th>Order Date</th>
+                   <th>Payment Status</th>
+                   <th>Delivery Status</th>
+                 </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>000046</td>
+                     <td>
+                        <span><strong> Product Code :</strong>PDR0012</span>
+                        <span><strong>Quantity :</strong>1</span>
+                     </td>
+                     <td>1</td>
+                     <td>BDT. 299</td>
+                     <td>
+                        <span><strong>Name :</strong>user12</span><br>
+                        <span><strong>Address :</strong>#1234</span><br>
+                        <span><strong>City :</strong>delhi</span><br>
+                     </td>
+                     <td>04 Dec, 2020</td>
+                     <td>
+                        <!-- <span class="btn btn-sm btn-success text-white fw-bold">Paid</span> -->
+                        <span class="btn btn-sm btn-danger text-white fw-bold disabled">COD</span>
+                     </td>
+                     <td>
+                        <a data-pid="" href="#" class="btn btn-sm btn-primary">Complete</a>
+                        <!-- <strong>Delivered</strong> -->
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <td>000046</td>
+                     <td>
+                        <div>
+                           <span><strong> Product Code :</strong> PDR0012</span>
+                           <span><strong>Quantity :</strong> 1</span>
+                        </div>
+                        <div>
+                           <span><strong> Product Code :</strong> PDR0012</span>
+                           <span><strong>Quantity :</strong> 1</span>
+                        </div>
+                        <div>
+                           <span><strong> Product Code :</strong> PDR0012</span>
+                           <span><strong>Quantity :</strong> 1</span>
+                        </div>
+                     </td>
+                     <td>3</td>
+                     <td>BDT. 1150</td>
+                     <td>
+                        <span><strong>Name :</strong>user12</span><br>
+                        <span><strong>Address :</strong>#1234</span><br>
+                        <span><strong>City :</strong>delhi</span><br>
+                     </td>
+                     <td>04 Dec, 2020</td>
+                     <td>
+                        <!-- <span class="btn btn-sm btn-success text-white fw-bold">Paid</span> -->
+                        <span class="btn btn-sm btn-danger text-white fw-bold disabled">COD</span>
+                     </td>
+                     <td>
+                        <a data-pid="" href="#" class="btn btn-sm btn-primary">Complete</a>
+                        <!-- <strong>Delivered</strong> -->
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>000046</td>
+                     <!-- product details  -->
+                     <td>
+                        <div>
+                           <span><strong> Product Code :</strong> PDR0012</span>
+                           <span><strong>Quantity :</strong> 1</span>
+                        </div>
+                        <div>
+                           <span><strong> Product Code :</strong> PDR0012</span>
+                           <span><strong>Quantity :</strong> 1</span>
+                        </div>
+                     </td>
+                     <td>2</td>
+                     <td>BDT. 490</td>
+                     <td>
+                        <span><strong>Name :</strong>user12</span><br>
+                        <span><strong>Address :</strong>#1234</span><br>
+                        <span><strong>City :</strong>delhi</span><br>
+                     </td>
+                     <td>04 Dec, 2020</td>
+                     <td>
+                        <span class="btn btn-sm btn-success text-white fw-bold">Paid</span>
+                        <!-- <span class="btn btn-sm btn-danger text-white fw-bold disabled">COD</span> -->
+                     </td>
+                     <td>
+                        <!-- <a data-pid="" href="#" class="btn btn-sm btn-primary">Complete</a> -->
+                        <strong>Delivered</strong>
+                     </td>
+                  </tr>
+               </tbody>
+             </table>
+
+         <!-- Pagination  -->
+         <div class="mt-5">
+            <ul class="pagination justify-content-center">
+               <li class="page-item disabled">
+                  <a class="page-link text-white fw-bold" href="#">Previous</a>
+               </li>
+               <li class="page-item">
+                  <a class="page-link text-white fw-bold active-pagination" href="#">1</a>
+               </li>
+               <li class="page-item">
+                  <a class="page-link text-white fw-bold" href="#">2</a>
+               </li>
+               <li class="page-item">
+                  <a class="page-link text-white fw-bold" href="#">3</a>
+               </li>
+               <li class="page-item">
+                  <a class="page-link text-white fw-bold" href="#">Next</a>
+               </li>
+             </ul>
+         </div>
+         <!-- Pagination ends -->
+         </div>
+         <!-- Orders Content ends -->
+      </div>
+   </div>
+   <!-- Orders Body ends -->
+
+   <!------Add Orders modal ------>
+   <div class="modal modal-lg fade" id="addnew-brand-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Add New Brand</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+             <!--ADD category form -->
+            <form action="">
+               <!-- ADD category input  -->
+               <div class="mb-3 mt-3">
+                  <label for="product-title" class="form-label fw-bold">Brand Name</label>
+                  <input autocomplete="off" type="text" class="form-control" id="brand-name" placeholder="Brand Name" name="brand_name">
+               </div>
+               <!-- submit btn  -->
+               <input class="btn btn-sm rounded px-5 mt-3 fs-6 fw-bold text-white common-btn" type="submit" name="add_brand_submitbtn" value="Add" id="add-brand-submitbtn">
+               </div>
+               <!-- form ends  -->
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- Add Brand modal ends-->
+
+   <!-- Update Brand modal-->
+   <div class="modal modal-lg fade" id="update-brand-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Edit Brands</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+             <!--Update Brands form -->
+            <form action="">
+               <!-- Update Brands input  -->
+               <div class="mb-3 mt-3">
+                  <label for="product-title" class="form-label fw-bold">Brand Name</label>
+                  <input autocomplete="off" type="text" class="form-control" id="subcate-name" placeholder="Brand Name" name="subcate_name">
+               </div>
+               <!-- submit btn  -->
+               <input class="btn btn-sm rounded px-5 mt-3 fs-6 fw-bold text-white common-btn" type="submit" name="update_brand_submitbtn" id="update-brand-submitbtn" value="Update">
+               </div>
+               <!-- form ends  -->
+            </form>
+         </div>
+      </div>
+   </div>
+    <!-- Update Brand modal ends-->
+
+
+
+   <!-- bootstrap Js  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Custom Javascript  -->
+   <script type="text/javascript" src="./js/admin-script.js"></script>
+</body>
+</html>
